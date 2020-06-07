@@ -1,0 +1,34 @@
+<ion-view>
+	<ion-header-bar>
+		<ion-nav-bar class="bar-stable">
+			<ion-nav-title>
+				<div class="bar bar-header"> 
+					<button ng-click="$ionicGoBack()" class="button back-button buttons  button-clear header-item">
+						<i class="icon ion-android-arrow-back"></i> 
+					</button>
+					<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+					</button>
+				    <h1 class="title">
+						Color Locator
+					</h1>
+					
+				</div>
+			</ion-nav-title> 
+		</ion-nav-bar>
+	</ion-header-bar>
+  <ion-content class="amazona-colorlocatorresult" overflow-scroll="false">
+	<ion-scroll zooming="true" direction="xy" style="width: 100%;" overflow-scroll="false">
+		<div class="canvas-wrapper">
+			<!--<canvas id="myCanvas" width="454" height="452" style="border:1px solid #d3d3d3;"> -->
+			<canvas on-double-tap="cancelZoom()" id="myCanvas" ng-model="formData.myCanvas" width="{{canvas.width}}" height="{{canvas.height}}">
+			<!--style="background-image: url(img/codelocator.gif);background-size: cover;">-->
+				Your browser does not support the HTML5 canvas tag.
+			</canvas>
+			
+		</div>
+	</ion-scroll>	
+	
+		<img class="amazona-colorlocator-image" id="colorLocatorMarker" src="img/core/darkgreen-dot.png">
+		<img class="amazona-colorlocator-image" id="colorLocatorImg" src="img/core/codelocator.gif">
+  </ion-content>
+</ion-view>

@@ -1,0 +1,77 @@
+<ion-view>
+	<ion-header-bar>
+
+		<ion-nav-bar class="bar-stable">
+			<ion-nav-title>
+				<div class="bar bar-header">  
+					<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+					</button>
+					<button class="button button-clear button-positive amazona-bar-button" ng-click="goHome()">
+						<img class="my-big-logo-img" src="img/core/logo-lg.png">
+					</button>
+					<div class="amazona-phone-div">
+						<a href="mailto:info@happywallpaints.com" class="amazona-email">
+							<i class="icon ion-email"></i>
+						</a>
+						<a href="tel:{{chosenGarage.tel}}"><i class="icon ion-android-call"></i></a>
+					</div>
+				</div>
+			</ion-nav-title>
+		</ion-nav-bar>
+		
+	</ion-header-bar>
+	<ion-content class="amazona-colorlocator" overflow-scroll="false">
+		<div class="row row-center colorlocator-header">
+				<div class="col">
+				<p>
+				  Color locator
+				</p>
+			</div>
+		</div>
+	
+		<div class="row row-center">
+			<div class="col">
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Cars</span>
+					<div class="select-wrapper">
+						<select tabindex="1" required 
+							ng-model="formData.selectedCar" 
+							ng-options="x.carName for x in formData.carWithLocators"
+							ng-change="updateModels()">
+							<option value="" hidden selected disabled>Choose Car</option>
+						</select>
+					</div>
+				</label>
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Models</span>
+					<div class="select-wrapper">
+						<select ng-disabled="formData.disableModel" tabindex="1" required 
+							ng-model="formData.selectedModel" 
+							ng-options="x.model.toUpperCase() for x in formData.models"
+							ng-change="updateYears()">
+							<option value="" hidden selected disabled>Choose Model</option>
+						</select>
+					</div>
+				</label>
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Years</span>
+					<div class="select-wrapper">
+						<select ng-disabled="formData.disableYear" tabindex="1" required 
+							ng-model="formData.selectedYear" 
+							ng-options="x.year.toUpperCase() for x in formData.years">
+							<option value="" hidden selected disabled>Choose Year</option>
+						</select>
+					</div>
+				</label>
+					<style>
+						.button.button-positive.amazona-search-button{
+							background-color: {{chosenGarage.theme_color}};
+						}
+	
+					</style>
+					
+				<button ng-disabled="formData.disableSearch" class="button button-block button-positive amazona-search-button" type="button" ng-click="searchMarkers()">SEARCH</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

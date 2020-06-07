@@ -1,0 +1,7 @@
+"id_transaction","discount","amount","id_curreny","transactionYear","transactionMonth","transactionDay","client_name"
+2,11.12,50.00,1,2012,4,8,
+3,99.99,50.00,2,2012,4,17,
+4,0.00,276000.00,2,2012,4,24,"test"
+5,0.00,30960.00,2,2012,4,30,""
+6,0.00,64836.50,2,2012,4,30,"maroun"
+7,0.00,5160.40,2,2012,5,2,"elie younis"

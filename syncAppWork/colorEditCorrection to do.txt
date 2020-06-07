@@ -1,0 +1,36 @@
+defaultPrice should be string - done
+
+ "actionType": "edit",
+        "argb": "0,255,255,255",
+        "masse_volumique_ext": "0.923",
+        "masse_volumique": "0.923",
+        "id_unit_on_entry": "3",
+        "colorCode": "4002",
+        "name_color": "BC 4002  Diluant",
+        "name_color_alternative": "",
+        "name_color_alternative2": "BC 002  Diluant",
+        "id_color": "10",
+        "colorImgPath": "4101.jpg                                                                                            ",
+        "defaultPrice": 0,
+        "id_defaultCurreny": "2",
+        "id_defaultUnit": "1"
+		
+		
+		{
+		"actionType": "add", 
+		"id_color": "1", 
+		"colorImgPath": "4101.jpg                                                                                            ", 
+		"defaultPrice": "0.00", 
+		"id_defaultCurreny": "2",
+		"id_defaultUnit": "1", 
+		"colorCode": "4002", 
+		"name_color": "BC 4002  Diluant", 
+		"masse_volumique": "0.92",
+		"state": "U", 
+		"seqnum": "22", 
+		"id_unit_on_entry": "3", 
+		"name_color_alternative": "", 
+		"masse_volumique_ext": "0.92", 
+		"argb": "0,255,255,255", 
+		"name_color_alternative2": "BC 002  Diluant" 
+		}, 

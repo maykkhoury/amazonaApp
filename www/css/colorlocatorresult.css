@@ -1,0 +1,24 @@
+.amazona-colorlocator-image{
+	display:none;
+}
+.canvas-wrapper{
+	text-align: center;
+	height:520px;
+}
+.canvas-wrapper canvas{
+	height:520px;
+	width:100%;
+}
+@media(min-width:768px){
+    .canvas-wrapper,
+    .canvas-wrapper canvas{
+        height: 1020px;
+    }
+}
+
+@media(min-width:1366px){
+    .canvas-wrapper,
+    .canvas-wrapper canvas{
+        height: 1320px;
+    }
+}

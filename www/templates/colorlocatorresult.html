@@ -1,0 +1,34 @@
+<ion-view>
+	
+    <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i></ion-nav-back-button>
+    
+    <ion-nav-title>
+        <div class="bar bar-header">
+            <h1 class="title">
+                Color Locator
+            </h1>
+            
+        </div>
+    </ion-nav-title>
+    
+    <ion-nav-buttons side="right">
+        <button class="button button-clear amazona-logout-button" ng-click="doLogout()">
+            <i class="icon ion-log-out"></i>
+        </button>
+    </ion-nav-buttons>
+  <ion-content class="amazona-colorlocatorresult" overflow-scroll="false">
+	<ion-scroll zooming="true" direction="xy" style="width: 100%;" overflow-scroll="false">
+		<div class="canvas-wrapper">
+			<!--<canvas id="myCanvas" width="454" height="452" style="border:1px solid #d3d3d3;"> -->
+			<canvas on-double-tap="cancelZoom()" id="myCanvas" ng-model="formData.myCanvas" width="{{canvas.width}}" height="{{canvas.height}}">
+			<!--style="background-image: url(img/codelocator.gif);background-size: cover;">-->
+				Your browser does not support the HTML5 canvas tag.
+			</canvas>
+			
+		</div>
+	</ion-scroll>	
+	
+		<img class="amazona-colorlocator-image" id="colorLocatorMarker" src="img/core/darkgreen-dot.png">
+		<img class="amazona-colorlocator-image" id="colorLocatorImg" src="img/core/codelocator.gif">
+  </ion-content>
+</ion-view>

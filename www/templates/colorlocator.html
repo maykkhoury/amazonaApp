@@ -1,0 +1,57 @@
+<ion-view>
+
+	<ion-content class="amazona-colorlocator has-header" overflow-scroll="false">
+		<div class="row row-center colorlocator-header">
+				<div class="col">
+				<p>
+				  Color locator
+				</p>
+			</div>
+		</div>
+	
+		<div class="row row-center">
+			<div class="col">
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Cars</span>
+					<div class="select-wrapper">
+						<select tabindex="1" required 
+							ng-model="formData.selectedCar" 
+							ng-options="x.carName for x in formData.carWithLocators"
+							ng-change="updateModels()">
+							<option value="" hidden selected disabled>Choose Car</option>
+						</select>
+					</div>
+				</label>
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Models</span>
+					<div class="select-wrapper">
+						<select ng-disabled="formData.disableModel" tabindex="1" required 
+							ng-model="formData.selectedModel" 
+							ng-options="x.model.toUpperCase() for x in formData.models"
+							ng-change="updateYears()">
+							<option value="" hidden selected disabled>Choose Model</option>
+						</select>
+					</div>
+				</label>
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Years</span>
+					<div class="select-wrapper">
+						<select ng-disabled="formData.disableYear" tabindex="1" required 
+							ng-model="formData.selectedYear" 
+							ng-options="x.year.toUpperCase() for x in formData.years">
+							<option value="" hidden selected disabled>Choose Year</option>
+						</select>
+					</div>
+				</label>
+					<style>
+						.button.button-positive.amazona-search-button{
+							background-color: {{chosenGarage.theme_color}};
+						}
+	
+					</style>
+					
+				<button ng-disabled="formData.disableSearch" class="button button-block button-positive amazona-search-button" type="button" ng-click="searchMarkers()">SEARCH</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

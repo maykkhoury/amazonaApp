@@ -1,0 +1,23 @@
+.button.button-positive.amazona-settings-button{
+	background-color: #e6393c;
+	color: white;
+	font-size: 16px;
+    font-weight: bold;
+}
+.hideLabel{
+	display: none;
+}
+
+.errorLabel span{
+	color: red;
+	font-size: small;
+}
+
+/*fix vertical align of the form*/
+.amazona-settings-div .row, .amazona-settings-div .scroll {
+  height: 75%;
+}
+
+.amazona-settings-div .item{
+	border:none;
+}

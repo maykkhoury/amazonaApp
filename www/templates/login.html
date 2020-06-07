@@ -1,0 +1,38 @@
+
+<ion-view>
+
+    
+  <ion-content class="amazona-login-div has-header" overflow-scroll="false">
+		<div class="row row-center">
+			<div class="col">
+				<form ng-submit="doLogin()" novalidate="">
+				  <div class="list">
+					<label class="item item-input item-stacked-label">
+					  <span class="input-label">Enter your credentials:</span>
+					</label>
+					
+					<label class="item item-input item-stacked-label">
+					  <input class="amazona-input" type="text" placeholder="Garage Name" ng-model="formData.garageName">
+					</label>
+					
+					<label class="item item-input item-stacked-label">
+					  <input class="amazona-input" type="text" placeholder="Garage Key" ng-model="formData.garageKey">
+					</label>
+					
+					<label class="item item-input errorLabel {{myErrorLabelClass}}">
+						<span class="input-label">Wrong login</span>
+					</label>
+					
+					<label class="item">
+					  <button class="button button-block button-positive amazona-login-button" type="submit">SIGN IN
+                      </button>
+					</label>
+				  </div>
+				</form>
+			</div>
+		</div>
+		
+
+			   
+  </ion-content>
+</ion-view>

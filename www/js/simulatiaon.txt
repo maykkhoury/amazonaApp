@@ -1,0 +1,122 @@
+	/*SearchFormulasService.search($scope.formData.searchObject, 
+								 $scope.pageData.fetchSize, 
+								 $scope.pageData.lastFetchFormula_id).then(
+				function(formulaTab){
+					$scope.formulas.groups = formulaTab;
+					if($scope.formulas.groups.length >0){
+						$scope.pageData.lastFetchFormula_id = $scope.formulas.groups[$scope.formulas.groups.length - 1].id_formula;
+						$scope.pageData.formula_id_used.push($scope.pageData.lastFetchFormula_id);
+						//alert("setting last id=" + $scope.pageData.lastFetchFormula_id);
+						alert("id initial:" +  $scope.pageData.lastFetchFormula_id + " added to used");
+					}
+					$scope.pageData.initialSearchDone = true;
+				}
+	);*/
+					
+	
+	
+	
+	//DATA SIMULATION FOR FORMULAS
+	//scroll load more on infinite functionality
+	/*
+	var basiColor='';
+	var typeColor='BC';
+	var formulaNameExt='';
+	$scope.iMax=15;
+	$scope.loadMore = function() {
+		for (var i=0; i<$scope.iMax; i++) {
+			if(i%2==0){
+				basiColor='red';
+				typeColor='BC';
+				formulaNameExt=' this is a veryyyyyy long formula name that cant fit in the title';
+			}else{
+				if(i%3==0){
+					basiColor='green';
+					typeColor='2K';
+					formulaNameExt='';
+				}else{
+					if(i%5==0){
+						basiColor='blue';
+						typeColor='LS';
+						formulaNameExt='';
+					}else{
+						basiColor='maroon';
+						typeColor='BC';
+						formulaNameExt='';
+					}
+				}
+			}
+			$scope.groups[i] = {
+				id_formula: i,
+				code: '01' + i,
+				carName: $scope.formData.carName,
+				type: typeColor,
+				name: 'color name ' + i + formulaNameExt,
+				year: 'Y' + i,
+				hue: 'S' + i,
+				card: 'Card number' + i,
+				basic_color: basiColor,
+				modDate: '12/12/12',
+				carImgPath:$scope.formData.carImgPath,
+				variants: []
+			};
+			
+			$scope.groups[i].variants.push({ variantImg : 'variantCO.jpg', name : 'CORSER'});
+			$scope.groups[i].variants.push({ variantImg : 'variantB.jpg', name : 'BLUE'});
+			$scope.groups[i].variants.push({ variantImg : 'variantD.jpg', name : 'DARKER'});
+		}
+		
+		$scope.iMax +=10;
+		$scope.$broadcast('scroll.infiniteScrollComplete');
+	};
+	$scope.$on('$stateChangeSuccess', function() {
+		$scope.loadMore();
+	});
+	
+	$scope.moreDataCanBeLoaded = function(){
+		return $scope.iMax<=45;
+	}
+	//****************************
+	
+	for (var i=0; i<$scope.iMax; i++) {
+		if(i%2==0){
+			basiColor='red';
+			typeColor='BC';
+			formulaNameExt=' this is a veryyyyyy long formula name that cant fit in the title';
+		}else{
+			if(i%3==0){
+				basiColor='green';
+				typeColor='2K';
+				formulaNameExt='';
+			}else{
+				if(i%5==0){
+					basiColor='blue';
+					typeColor='LS';
+					formulaNameExt='';
+				}else{
+					basiColor='maroon';
+					typeColor='BC';
+					formulaNameExt='';
+				}
+			}
+		}
+		$scope.groups[i] = {
+			id_formula: i,
+			code: '01' + i,
+			carName: $scope.formData.carName,
+			type: typeColor,
+			name: 'color name ' + i + formulaNameExt,
+			year: 'Y' + i,
+			hue: 'S' + i,
+			card: 'Card number' + i,
+			basic_color: basiColor,
+			modDate: '12/12/12',
+			carImgPath:$scope.formData.carImgPath,
+			variants: []
+		};
+		
+		$scope.groups[i].variants.push({ variantImg : 'variantCO.jpg', name : 'CORSER'});
+		$scope.groups[i].variants.push({ variantImg : 'variantB.jpg', name : 'BLUE'});
+		$scope.groups[i].variants.push({ variantImg : 'variantD.jpg', name : 'DARKER'});
+	};
+	*/

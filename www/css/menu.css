@@ -1,0 +1,10 @@
+.amazona-menu-button .icon{
+	/*color:#c9a525;*/
+	color: red;
+}
+.amazona-menu-content .amazona-menu-button  .item-content{
+	border-bottom-color: #c2bfc0;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	background-color:transparent;
+}

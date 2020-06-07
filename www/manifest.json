@@ -1,0 +1,11 @@
+{
+  "name": "Amazona Mobile App",
+  "short_name": "AmazonaApp",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

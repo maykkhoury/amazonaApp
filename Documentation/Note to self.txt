@@ -1,0 +1,20 @@
+(always) In the HQ db make sure the type of "argb" in color table is set to Text
+(always) In the HQ db make sure the column theme_color (type=text) exists in the table garage
+(always) make sure the garages have a key
+(always) make sure the logos set for the garages exists in the mobile img folder
+
+Note:
+make sure the export_to_csv object is created in the access db
+and make sure the "MyExportSpecif" is created on "alfa_romeo" table or similar
+
+after the DB is created. copy/paste it in "C:\hybridworkspaces\amazonaApp\www"
+
+troubwshoot:
+-In xcode when we get “linker” problems on build, we do the following:
+	.cordova plugin rm cordova-plugin-console
+	.cordova plugin add cordova-plugin-console
+	.ionic cordova build ios
+
+
+
+

@@ -1,0 +1,100 @@
+       "formulaColor": [
+          {
+            "encrypted": true,
+            "id_car": 0,
+            "id_formulaColor": 350849,
+            "id_formula": 1,
+            "id_color": 6911,
+            "quantite": 1.19,
+            "quantiteEnc": null,
+            "id_Unit": 2
+          },
+          {
+            "encrypted": true,
+            "id_car": 0,
+            "id_formulaColor": 350850,
+            "id_formula": 1,
+            "id_color": 6900,
+            "quantite": 9.76,
+            "quantiteEnc": null,
+            "id_Unit": 2
+          },
+          {
+            "encrypted": true,
+            "id_car": 0,
+            "id_formulaColor": 350851,
+            "id_formula": 1,
+            "id_color": 6903,
+            "quantite": 12.9,
+            "quantiteEnc": null,
+            "id_Unit": 2
+          },
+          {
+            "encrypted": true,
+            "id_car": 0,
+            "id_formulaColor": 350852,
+            "id_formula": 1,
+            "id_color": 6905,
+            "quantite": 22.01,
+            "quantiteEnc": null,
+            "id_Unit": 2
+          },
+          {
+            "encrypted": true,
+            "id_car": 0,
+            "id_formulaColor": 350853,
+            "id_formula": 1,
+            "id_color": 6894,
+            "quantite": 1079.34,
+            "quantiteEnc": null,
+            "id_Unit": 2
+          }
+        ],
+		
+		encrypted must be "0" or "1"
+		ids must be string
+		quantite must be string
+		quantiteEnc jsonignore
+		-------------------------------
+		suppsoed
+		
+		
+		 "formulaColor": [
+							{
+							  "id_formulaColor": "360248",
+							  "id_formula": "331",
+							  "id_color": "6896",
+							  "quantite": "8.62",
+							  "id_unit": "2",
+							  "state": "I",
+							  "encrypted": "0"
+							},
+							{
+							  "id_formulaColor": "360249",
+							  "id_formula": "331",
+							  "id_color": "6897",
+							  "quantite": "27.4",
+							  "id_unit": "2",
+							  "state": "I",
+							  "encrypted": "0"
+							},
+							{
+							  "id_formulaColor": "360250",
+							  "id_formula": "331",
+							  "id_color": "6895",
+							  "quantite": "87.95",
+							  "id_unit": "2",
+							  "state": "I",
+							  "encrypted": "0"
+							},
+							{
+							  "id_formulaColor": "360251",
+							  "id_formula": "331",
+							  "id_color": "223275",
+							  "quantite": "803.23",
+							  "id_unit": "2",
+							  "state": "I",
+							  "encrypted": "0"
+							}
+						  ]
+					}

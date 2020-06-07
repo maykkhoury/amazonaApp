@@ -1,0 +1,93 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <ion-side-menu-content>
+	
+    <ion-nav-bar class="bar-stable">
+        <ion-nav-title>
+			<div class="bar bar-header">
+			  <h1 class="title">
+                  <img class="my-big-logo-img" src="img/core/logo-lg.png">
+              </h1>
+
+			</div>
+		</ion-nav-title>
+        
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+            </button>
+        </ion-nav-buttons>
+      
+        <ion-nav-buttons side="right">
+          <!--<button class="button button-clear">
+              <a href="mailto:info@happywallpaints.com" class="amazona-email">
+                  <i class="icon ion-email"></i>
+              </a>
+          </button>
+           -->
+          
+          <!--
+          <button class="button button-clear" style="padding-left:25px" ng-click="tel:+9619218656">
+                <i class="icon ion-android-call amazona-color-black"></i>
+          </button>
+          -->
+          <a href="mailto:info@happywallpaints.com" class="amazona-email" style="font-size:30px;-webkit-tap-highlight-color:grey">
+              <i class="icon ion-email"></i>
+          </a>
+          <a href="tel:+9619218656" style="padding-left:25px;font-size:30px;-webkit-tap-highlight-color:grey;">
+              <i class="icon ion-android-call amazona-color-black"></i>
+          </a>
+          
+        </ion-nav-buttons>
+      
+    </ion-nav-bar>
+    
+    
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+    <ion-content class="amazona-menu-content" overflow-scroll="false">
+      <ion-list>
+		<ion-item menu-close class="item-icon-left amazona-menu-button" href="#/app/home"
+		ng-show="connected=='1'">
+		  <i class="icon ion-home"></i> <span>Home</span>
+		</ion-item>
+		
+		<ion-item menu-close class="item-icon-left amazona-menu-button" href="#/app/login"
+		ng-show="connected!='1'">
+		  <i class="icon ion-log-in"></i> <span>Login</span>
+		</ion-item>
+		
+		<ion-item menu-close class="item-icon-left amazona-menu-button" href="#/app/colorlocator"
+		ng-show="connected=='1'">
+		  <i class="icon ion-model-s"></i> <span>Color Locator</span>
+		</ion-item>
+		
+		<ion-item menu-close class="item-icon-left amazona-menu-button" href="#/app/about">
+		  <i class="icon ion-information-circled"></i> <span>About us</span>
+		</ion-item>
+		
+		<ion-item menu-close class="item-icon-left amazona-menu-button" href="#/app/contactus">
+		  <i class="icon ion-compose"></i> <span>Contact us</span>
+		</ion-item>
+		
+		<ion-item menu-close class="item-icon-left amazona-menu-button" href="#/app/synchapp"
+		ng-show="connected!='1'">
+		  <i class="icon ion-android-sync"></i> <span>Synch app</span>
+		</ion-item>
+		
+		<ion-item menu-close class="item-icon-left amazona-menu-button" ng-click="doLogout()"
+		ng-show="connected=='1'">
+		  <i class="icon ion-log-out"></i> <span>Logout</span>
+		</ion-item>
+
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

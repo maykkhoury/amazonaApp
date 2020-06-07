@@ -1,0 +1,91 @@
+"formulas": [
+      {
+
+"actionType": "edit",
+"dateCreMod": "0001-01-01T00:00:00",
+"isMoved": false,
+"isEquation4201_180": true,
+"isEquation15perc4201": false,
+"cardNumber": "",
+"id_formulaXp": 0,
+"id_formulaX2p": 0,
+"id_formulaYp": 0,
+"id_formulaY2p": 0,
+"id_formulaZp": 0,
+"id_formulaZ2p": 0,
+"id_formulaY": -1,
+"id_formulaX": -1,
+"id_formulaZ": 0,
+"name_car": "Alfa Romeo",
+"c_year": "1955 - 1965",
+"colorRGB": "0",
+"colorCode": "001",
+"duplicate": "0",
+"formulaVariant": "",
+"name_formula": "BIANCO",
+"version": "S1",
+"type": "2K",
+"id_formula": 1,
+"id_car": 1,
+"formulaImgPath": "0",
+"otherPrice": 0,
+"id_otherCurreny": 0,
+"id_otherUnit": 0
+ 
+tableName is missing.(done)
+all ids must be string (done)
+otherPrice must be string (done)
+formulaVariant must be called variant (done)
+isEquation15perc4201 should be with "0" and "1" or "" (done)
+noEquation4201_180 must be instead of isEquation4201_180, and with "0" and "1" or "" (done)
+colorRGBPerc is missing (ensa)
+code_formula of multis are missing (done)
+Date_cre_mod is missing (done)
+converted is missing (ensa)
+
+  supposed to be:
+  
+"actionType" : "add",	
+"tableName" : "Aston_Martin",
+"id_formula": "331",
+"id_formulaX": "-1",
+"id_formulaY": "-1",
+"formulaImgPath": "0                                                                                                   ",
+"otherPrice": "0.00",
+"id_otherCurreny": "0",
+"id_otherUnit": "0",
+"type": "2K",
+"id_car": "2",
+"version": "S1",
+"name_formula": "BOWLAND BLACK",
+"c_year": "2000 - 2002",
+"variant": "",
+"duplicate": "0",
+"colorCode": "1106 - 9531101",
+"colorRGB": "0",
+"clientName": "",
+"cardNumber": "",
+"seqnum": "0",
+"state": "0",
+"id_formulaZ": "",
+"id_formulaZp": "",
+"id_formulaZ2p": "",
+"id_formulaXp": "",
+"id_formulaX2p": "",
+"id_formulaYp": "",
+"id_formulaY2p": "",
+"isEquation15perc4201": "",
+"converted": "1",
+"Date_cre_mod": "",
+"noEquation4201_180": "",
+"colorRGBPerc": "",
+"code_formulaX": "",
+"code_formulaXp": "",
+"code_formulaXpp": "",
+"code_formulaY": "",
+"code_formulaYp": "",
+"code_formulaYpp": "",
+"code_formulaZ": "",
+"code_formulaZp": "",
+"code_formulaZpp": "",
+					 

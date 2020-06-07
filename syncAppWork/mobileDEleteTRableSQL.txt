@@ -1,0 +1,10 @@
+CREATE TABLE mobileDeleteSync ( id_mobileDeleteSync integer primary key autoincrement, syncTable text, idTable text, colorCode text, id_car text, name_color text, type text, tableName text, carName text, garage_name text, location text,name_responsible text, id_language  text, version  text,coat text, username  text,apply_equation  text, currentLastSyncVersion integer);
+
+
+garage_name text, 
+location text,
+name_responsible text, 
+id_language  text, 
+version  text, 
+username  text,
+apply_equation  text,

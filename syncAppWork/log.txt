@@ -1,0 +1,1 @@
+Warning 1: layer names ignored in combination with -sql.

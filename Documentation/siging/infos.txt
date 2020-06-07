@@ -1,0 +1,13 @@
+echo build release app 
+ionic build android --release 
+
+cd C:\hybridworkspaces\amazonaApp\platforms\android\build\outputs\apk
+
+echo password:Happywall100
+echo keytool -genkey -v -keystore amazona-key.keystore -alias amazona -keyalg RSA -keysize 2048 -validity 10000
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore amazona-key.keystore -storepass Happywall100 android-release-unsigned.apk amazona
+
+echo rename android-release-unsigned.apk to android-release-signed.apk
+rename android-release-unsigned.apk android-release-signed.apk
+"C:\android\sdk\build-tools\24.0.3\zipalign.exe" -v 4 android-release-signed.apk amazona.apk

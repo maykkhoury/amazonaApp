@@ -1,0 +1,27 @@
+<ion-view>
+    <ion-content class="synchapp has-header" overflow-scroll="false">
+
+  <div class="row row-center synchapp-header">
+			<div class="col">
+			<p>
+			  App synchronization
+			</p>
+		</div>
+	</div>
+	<div class="row row-center">
+		<div class="col">
+				<form ng-submit="doSynch()" novalidate="">
+				  <div class="list">
+					<label class="item">
+					  <button class="button button-block button-positive amazona-synch-button" type="submit">Start Synch ({{currentLastUpdateVersion}})
+                      </button>
+					</label>
+					<label class="item item-input">
+						<span class="input-label amazona-wrap-label {{labelColorClass}}">{{synVersionMessage}}</span>
+					</label>
+				  </div>
+				</form>
+			</div>
+		</div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,5 @@
+PRAGMA encoding = "UTF-8";
+.open colorsDB.db
+.mode csv
+.import csv/color.csv color
+

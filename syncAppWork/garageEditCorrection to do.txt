@@ -1,0 +1,49 @@
+	  showall doesnt exist - ensa
+	  chosen should be numeric string - done
+	  public_tel doesnt exist - ensa cuz not used
+	  theme_color doesnt exist - ensa
+	  key1 shouldn't be null, "" instead - ensa
+	  
+
+ {
+        "actionType": "edit",
+        "apply_equation": "1+True",
+        "showAlternativeName": "1",
+        "key1": null,
+        "themeColor": "0",
+        "tel": "+9619218656",
+        "key": "101500",
+        "username": "Laser",
+        "coat": "LS",
+        "version": "",
+        "garage_name": "Laser Paints",
+        "location": "",
+        "logo": "Laser Paints.jpg",
+        "chosen": false,
+        "id_garage": "7",
+        "id_language": "1",
+        "name_responsible": "Miled"
+      }
+	  
+	  
+		"actionType": "add",
+		"id_garage": "1",
+		"id_language": "1",
+		"name_responsible": "Miled",
+		"chosen": "0",
+		"garage_name": "Laser Paints",
+		"location": "",
+		"logo": "Laser Paints.jpg",
+		"apply_equation": "1+True",
+		"seqnum": "12",
+		"state": "U",
+		"Version": "",
+		"coat": "LS",
+		"showall": "",
+		"showAlternativeName": "1",
+		"tel": "+9619218656",
+		"key": "101500",
+		"public_tel": "+9619218656",
+		"theme_color": "0",
+		"key1": "",
+		"username": "Laser"

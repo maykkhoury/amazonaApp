@@ -1,0 +1,63 @@
+<ion-view>
+	<ion-header-bar>
+		<ion-nav-bar class="bar-stable">
+			<ion-nav-back-button>
+			</ion-nav-back-button>
+			<ion-nav-title>
+				<div class="bar bar-header">  
+					<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+					</button>
+				    <h1 class="title">
+						Settings
+					</h1>
+				</div>
+			</ion-nav-title>
+		</ion-nav-bar>
+	</ion-header-bar>
+  <ion-content class="amazona-settings-div">
+		<div class="row row-center">
+			<div class="col">
+				<form ng-submit="saveSettings()">
+				  <div class="list">
+					<label class="item item-input item-stacked-label sab-item-select-outline">
+						<span class="input-label">Unit</span>
+						<div class="select-wrapper">
+							<select name="unit" required ng-model="formData.unit">
+								<option value="" hidden selected disabled>Choose Unit</option>
+								<option value="L">Litre</option>
+								<option value="K">Kilo</option>
+							</select>
+						</div>
+					</label>	
+					
+					<style>
+						.button.button-positive.amazona-settings-button{
+							background-color: {{chosenGarage.theme_color}};
+						}
+						
+						.toggle.toggle-assertive input:checked + .track {
+							 border-color: {{chosenGarage.theme_color}};
+							 background-color: {{chosenGarage.theme_color}};
+						}
+							
+					</style>
+					
+					<li class="item item-toggle">
+						 <span class="input-label">Show All Hues</span>
+						<label class="toggle toggle-assertive">
+							<input type="checkbox" ng-model="formData.showAllHues">
+							<div class="track">
+								<div class="handle"></div>
+							</div>
+						</label>
+					</li>
+					
+					<label class="item">
+					  <button class="button button-block button-positive amazona-settings-button" type="submit">SAVE</button>
+					</label>
+				  </div>
+				</form>
+			</div>
+		</div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,13 @@
+test: 
+(done)garage (d)edit/(d)delete sync
+(done)garage edit logo in HQ, should not be edited in mobile app
+
+(done)color (d)edit/(d)delete sync
+
+(done)car edit/delete sync
+
+(done) formulas edit/delete sync
+
+(done) multiformula edit/delete sync
+
+Test on real android phone

@@ -1,0 +1,5 @@
+PRAGMA encoding = "UTF-8";
+.open carsDB.db
+.mode csv
+.import csv/car.csv car
+

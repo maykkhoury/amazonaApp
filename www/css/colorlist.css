@@ -1,0 +1,217 @@
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+.amazona-colorlist-variant{
+	margin:5px;
+	height:25px;
+	border-radius:10px;
+}
+.amazona-colorlist-basic-color{
+	height:25px;
+	border-radius:7px;
+	overflow:hidden
+}
+
+.amazona-colorlist-variant-name{
+	text-align: center;
+}
+.item-stable.amazona-filter-tab,
+.item-stable.amazona-sorter-tab{
+	padding-top:2px;
+	padding-bottom:2px;
+	background-color:#8e8d8e;
+	color: white;
+	border-radius: 20px;
+}
+.item-stable.amazona-filter-tab.active,
+.item-stable.amazona-sorter-tab.active{
+	color: #c11241;
+	border-color: #ccc;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.button.button-positive.amazona-show-color-button{
+	border-style: solid;
+    border-color: red; 
+	background-color: transparent;
+	color: red;
+	font-size: 12px;
+    font-weight: bold;
+}
+.button.button-positive.amazona-show-color-button.activated {
+	color: #e64949;
+	border-style: none;
+	background-color: #b1b0b0;
+}
+
+span.amazona-info-span-title{
+	color: #99999c;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+span.amazona-info-span-value{
+	width:80%;
+	text-align: right;
+	font-weight: bold;
+	padding-right: 5px;
+}
+span.amazona-info-span-value.type-color{
+	color: #bb2e37;
+}
+label.item-radio{
+	line-height: 2px;
+}
+label.item-radio i.radio-icon{
+	padding-top: 6px;
+}
+
+.amazona-colorlist-left-right-padding{
+	padding-left: 10px;
+    padding-right: 10px;
+}    
+.amazona-padding-bottom,
+.item-stable.item.amazona-formula.amazona-no-radius.amazona-padding-bottom{
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.amazona-padding-bottom-right,
+.item-stable.item.amazona-formula.amazona-no-radius.amazona-padding-bottom-right,{
+	border-bottom-right-radius: 20px;
+}
+
+.item-stable.item.amazona-formula{
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+.item-accordion.item{
+	border-left-style:solid;
+	border-left-width:1px;
+	border-left-color: #b2b2b2;
+	border-right-style:solid;
+	border-right-width:1px;
+	border-right-color: #b2b2b2;
+}
+.item-stable.item.amazona-formula{
+	border-radius:10px;
+}
+
+.item-stable.item.amazona-formula.amazona-no-radius{
+	border-radius:0px;
+}
+
+.item-stable.item.amazona-formula.active{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.item-accordion.amazona-filter-tab-content,
+.item-accordion.amazona-sorter-tab-content{
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color: #b2b2b2;
+}
+.amazona-padding-left{
+	padding-left:10px;
+}	
+.amazona-padding-left.amazona-expand{
+	padding-left: 7px;
+}
+.col.amazona-colorlist-variant-name{
+	line-height: 10px;
+}
+.amazona-font-title{
+	font-weight: bold;
+}
+.amazona-colorlist .item-stable.amazona-formula.item{
+	background-color:#fbf6fb;
+	padding-right: 4px;
+}
+.amazona-colorlist .item-stable.amazona-formula.item.active{
+	background-color: #fbf6fb;
+}
+.item-accordion.amazona-formula-detail{
+	background-color:#dedada
+}
+.amazona-colorlist-sorting-tab span{
+	cursor: pointer;
+}
+.amazona-colorlist-sorting-tab .row .col .row:active{
+	background-color:#c1bec1;
+}
+.amazona-colorlist-sorting-tab .row .col .row .col.col-70{
+	text-align:center;
+	padding-left:5px;
+}
+.amazona-colorlist-sorting-tab .row .col .row .col.col-30{
+	text-align:right;
+	border-right-style:solid;
+	border-right-color:#8e8d8e;
+	border-right-width:1px;
+	padding-right:5px;
+}
+
+.amazona-colorlist-sorting-tab .row .col .row .col.col-30.amazona-no-left-border{
+	border-right-style:none;
+}
+.item-stable.amazona-formula.amazona-colorlist-sorting-tab.item{
+	padding-top: 0px;
+    padding-bottom: 0px;
+	padding-right: 5px;
+	padding-left: 5px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+}
+
+.amazona-padding-top-bottom-5{
+	padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.amazona-selected-sort{
+	background-color: #e5e5e5;
+}
+
+.amazona-colorlist-sorting-tab .col-67{
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+
+.amazona-cancelSort{
+	text-align: center;
+}
+
+.amazona-colorlist .item-stable.amazona-formula.item[data-color$='umper']{
+	background-color: #F3DEF3;
+}
+.amazona-colorlist .item-stable.amazona-formula.item[data-name*=' + ']{
+	background-color: #BDD6DA;
+}
+
+.amazona-colorlist .item-accordion.item:last-of-type{
+	border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+.amazona-colorlist .amazona-arrow{
+ 	width: 50%;  
+	max-width: 400px;
+    max-height: 27px;
+	margin: auto;  
+	display: block;
+	margin-right: 5px;
+}

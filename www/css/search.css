@@ -1,0 +1,22 @@
+.amazona-search .item{
+	border:none;
+}
+
+.hideLabel{
+	display: none;
+}
+
+.errorLabel span{
+	color: red;
+	font-size: small;
+}
+.input-label.title{
+	text-decoration:underline;
+}
+.amazona-border-updown{
+	border-bottom-style: dotted !important;
+	border-bottom-width: 2px !important;
+	border-bottom-color: black !important;	
+
+}
+

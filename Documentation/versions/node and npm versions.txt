@@ -1,0 +1,5 @@
+C:\react>node --version
+v6.9.1
+
+C:\react>npm --version
+3.10.8

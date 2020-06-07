@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "color",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id_color": "10", "colorImgPath": "4101.jpg                                                                                            ", "defaultPrice": "0.00", "id_defaultCurreny": "2", "id_defaultUnit": "1", "colorCode": "4002", "name_color": "BC 4002  Diluant", "masse_volumique": "0.92", "state": "U", "seqnum": "22", "id_unit_on_entry": "3", "name_color_alternative": "", "masse_volumique_ext": "0.92", "argb": "0,255,255,255", "name_color_alternative2": "BC 002  Diluant" }, "geometry": null },
+{ "type": "Feature", "properties": { "id_color": "11", "colorImgPath": "4051.jpg                                                                                            ", "defaultPrice": "0.00", "id_defaultCurreny": "2", "id_defaultUnit": "1", "colorCode": "4051", "name_color": "BC 4051  Light Green", "masse_volumique": "0.98", "state": "U", "seqnum": "21", "id_unit_on_entry": "5", "name_color_alternative": "", "masse_volumique_ext": "0.98", "argb": "255,0,60,30", "name_color_alternative2": "BC 051  Light Green" }, "geometry": null }
+]
+}

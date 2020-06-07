@@ -1,0 +1,147 @@
+
+
+.amazona-details-variant-name{
+	text-align: center;
+}
+
+
+.amazona-details-left-right-padding{
+	padding-left: 10px;
+    padding-right: 10px;
+}
+.amazona-details-img-wrapper{
+	vertical-align: baseline;
+	width: 100%;
+	height: 100%;
+}
+.amazona-details-img-wrapper:hover{
+	background-color: #f8f8f8;
+    border-radius: 20px;
+	cursor:pointer;
+}
+
+
+.amazona-details-img-helper{
+	display: inline-block;
+}
+.amazona-details-car-img{
+	display:block;
+	margin-right: auto;
+    margin-left: auto;
+	border-radius: 20px;
+	max-height: 75px;
+}
+.amazona-details-main-list .list,
+.amazona-details-main-list label,
+.amazona-details-main-list input{
+    background-color: #fbf6fb !important;
+    border:none !important;
+}
+.amazona-details-main-list .amazona-detail-mode-bar label{
+	background-color: transparent !important;
+	padding-bottom: 5px;
+}
+
+.amazona-details-main-list .list{
+    border-radius: 20px !important;	
+}
+.amazona-kilo-litre-div{
+    border-left-style: solid;
+    border-left-color: #f17c7c;
+    border-left-width: 2px;
+}
+.amazona-details .radio-content{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.amazona-details .radio-content .item-content{
+	border-radius:20px;	
+}
+
+.amazona-details .item-radio input:checked + .radio-content .item-content {
+	background-color: #d88282;
+}
+.amazona-details-bcolor{
+	
+	border-radius:10px;
+}
+.amazona-detail-color-font{
+	font-size: 20px !important;
+}
+.amazona-details-colorlist .row,
+.amazona-details-colorlist .row{
+	border-bottom-style: solid;
+    border-bottom-color: #c2bfc0;
+    border-bottom-width: 1px;
+}
+.amazona-details-colorlist .cumulative-mode.row input,
+.amazona-details-colorlist .normal-mode.row  input,
+.amazona-details-colorlist .correction-mode.row .colorName input{
+	border:none;
+}
+
+.amazona-details-colorlist .row + .row {
+	margin-top: 0px
+}
+
+.amazona-details-colorlist{
+	padding-top:10px;
+}
+.row.correction-mode-diff.amazona-no-padding.amzona-details-no-border{
+	border: none !important;
+}
+
+.amazona-kilo-litre-div label.item.item-radio.ng-not-empty.ng-valid[disabled="disabled"] .radio-content div{
+	background-color:#dedada !important;
+}
+
+.amazona-details-main-list .amazona-input.total-qty:disabled{
+	background-color:#dedada !important;
+	padding-left:5px;
+	border-radius:10px;
+}
+
+.amazona-details-header .bar .title + .button:last-child{
+ 	right:2px;
+}
+.amazona-details-header .title.title-center.header-item{
+	right:0px !important;
+	margin-right:0px !important;
+}
+
+.amazona-details-header .title>div.amazona-ellipsis{
+	padding-left: 14px;
+	padding-right: 7px;
+    font-size: 15px;
+}
+
+
+.amazona-details-header .title.title-center.header-item .title{
+	margin-right: 2px; 
+}
+.amazona-details-colorlist .list .amazona-detail-color-selected:hover{
+    background-color: #dcd8d8;
+    border-radius: 10px;
+}
+.amazona-details-colorlist .list .amazona-detail-color-selected:focus{
+    background-color: #74bfd6;
+    border-radius: 10px;
+}
+.colorName .amazona-input{
+	width:100%;
+	text-overflow: ellipsis;
+}
+.colorQty .amazona-input{
+	text-align: right;
+	width: 100%;
+}
+
+.amazona-details-colorlist input.amazona-input{
+    webkit-text-fill-color: black;
+    color:black;
+    opacity:1;
+    -webkit-opacity:1;
+    -webkit-text-fill-color: black;
+}
+
+

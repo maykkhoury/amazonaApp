@@ -1,0 +1,273 @@
+/* Empty. Add your own CSS if you like */
+
+.background, .background .pane, .background .item, .background .item-complex .item-content, 
+.scroll-content.ionic-scroll{
+    background-color: #ece7e7;/*dedada;*/
+}
+
+/*
+    Form validation CSS
+*/
+ 
+/** Styling for the username field **/
+label.item.has-error {  
+  border-bottom: 2px solid red;
+}
+ 
+/** Styling for the password field when an error exists**/
+.error-container {
+  margin: 0;
+}
+ 
+.error {
+  /*padding: 8px 8px;*/
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #555;
+  vertical-align: middle;
+}
+ 
+.error i {
+  font-size: 24px;
+  color: #B83E2C;  
+  vertical-align: middle;
+}
+ 
+.last-error-container > .error {
+  padding: 10px 16px 0;
+}
+ 
+.has-errors {
+  border-bottom: 1px solid #B83E2C;
+}
+ 
+.no-errors {
+  border-bottom: 2px solid green;
+}
+
+/***********************************************************/
+/***********************************************************/
+img.my-big-logo-img{
+	height:100%;
+	padding-right:1px;
+}
+button>img.my-big-logo-img{
+	height: 42px;
+	width: 76px;
+}
+
+img.my-call-logo-img{
+	width: 33px;
+	height: 33px;
+	
+}
+.amazona-remove-top-padding{
+	padding-top:0px;
+}
+/*buttons overrides*/
+.amazona-bar-button{
+	vertical-align: middle;
+	padding: 0px;
+	margin: 0px;
+	border-width: 0px;
+	width: 22%;
+	position: fixed;
+	left: 35%;
+	margin-top: -5px;
+}
+
+/*input overrides*/
+input[type="text"].amazona-input,
+.item-stacked-label input{
+	border-bottom-color: #c2bfc0;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    background-color:transparent;
+}
+.input-label {
+	color: #525456;
+	font-weight: bold;
+}
+/*select overrides*/
+select{
+    width: 100%;
+    display: block;
+    padding-top: 2px;
+    padding-left: 0;
+    height: 34px;
+    color: #111;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 16px;
+    /*border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+	border-bottom-color: #c2bfc0;
+    border-bottom-style: solid;
+    border-bottom-width: thin;*/
+	border:none;
+    background-color:transparent;
+}
+ select:invalid { 
+	color: #aaaaaa; 
+}
+option {
+  color: #111;
+  background-color: #dedada;
+}
+
+.amazona-no-padding{
+	padding:0px;
+}
+
+div.amazona-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.amazona-text-expander{
+	overflow: initial;
+    white-space: initial;
+}    
+.amazona-padding-left-2{
+	padding-left: 2px;
+
+}	
+.amazona-separation-bar{
+	color: #ec2727;
+}
+.amazona-fullscreen-image {
+    max-width: 300px;
+    max-height: 300px;
+    /*bottom: 0;*/
+    left: 0;
+    margin: auto;
+    overflow: visible;
+    position: fixed;
+    right: 0;
+    top: 153px;
+    z-index: 99999999;
+    border-radius: 20px;
+}
+.amazona-visible-overflow{
+	overflow: visible;
+}
+ion-list.amazona-box-shadow>.list{
+	box-shadow: 10px 10px 3px #888888;
+}
+.amazona-padding-right-2{
+	padding-right: 2px;
+}
+.radio-content .item-content{
+	padding-right:34px;
+}
+
+ion-infinite-scroll:not(.active) .spinner,
+ion-infinite-scroll:not(.active) .icon:before {
+    display: inline-block;
+}
+
+select:focus{
+    background-color: #cde5ec;
+    border-radius: 10px;
+}
+
+div.select-wrapper{
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: #c2bfc0;
+}
+.amazona-max-width-6{
+	max-width: 6%;
+}
+.button.button-positive.amazona-search-button{
+	background-color: #e6393c;
+	color: white;
+	font-size: 16px;
+    font-weight: bold;
+}
+.button.button-positive.amazona-clear-button{
+	background-color: white;
+	color: #e6393c;
+	font-size: 16px;
+    font-weight: bold;
+}
+.button.button-positive.amazona-search-button.activated ,
+.button.button-positive.amazona-clear-button.activated {
+	color: #e64949;
+	border-style: none;
+	background-color: #b1b0b0;
+}
+
+select[disabled]{
+	border-radius:10px;
+}
+
+.amazona-colorlocator .colorlocator-header,
+.contactus .contactus-header,
+.synchapp .synchapp-header,
+.aboutus .aboutus-header{
+	text-align: center;
+
+	font-weight: bold;
+	font-size: larger;
+}
+.amazona-colorlocator .colorlocator-header>div,
+.contactus .contactus-header>div,
+.synchapp .synchapp-header>div,
+.aboutus .aboutus-header>div{
+	border-bottom-color: rgb(53, 57, 58);
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	
+}
+
+.amazona-colorlocator .colorlocator-header p,
+.contactus .contactus-header p,
+.synchapp .synchapp-header p,
+.aboutus .aboutus-header p{
+	margin-bottom:0px;
+}
+
+div.amazona-phone-div,div.amazona-logout-div{
+	position: fixed;
+	right: 0px;
+	font-size: 25px
+}
+div.amazona-phone-div>a{
+	top: 2px;
+	position: fixed;
+	right: 12px;
+}
+div.amazona-logout-div>a{
+	top: 2px;
+	position: fixed;
+	right: 4px;
+}
+
+.bar .title + .button.amazona-logout-button:last-child,.bar .title + .button.amazona-call-button:last-child,
+.bar > .button + .button.amazona-logout-button:last-child,.bar > .button + .button.amazona-call-button:last-child{
+	top: 7px;
+}
+
+.icon.ion-log-out{
+	/*color: #c9a525;*/
+	color: red;
+}
+
+div.bar.bar-header h1{
+    top:0px !important;
+}
+
+.amazona-color-black{
+    color: black !important;
+}
+.icon.ion-email{
+    font-size: 27px !important;
+    color: rgb(210, 177, 0);
+}
+.icon.ion-android-call.amazona-phone-home{
+    font-size: 27px;
+}
+

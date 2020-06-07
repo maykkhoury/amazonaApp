@@ -1,0 +1,7 @@
+PRAGMA encoding = "UTF-8";
+.open formulasDB.db
+.mode csv
+.import csv/Alfa_Romeo.csv Alfa_Romeo
+.import csv/Alfa_Romeo_formulaColor.csv Alfa_Romeo_formulaColor
+.import csv/Aston_Martin.csv Aston_Martin
+.import csv/Aston_Martin_formulaColor.csv Aston_Martin_formulaColor

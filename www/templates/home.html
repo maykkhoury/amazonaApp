@@ -1,0 +1,69 @@
+<ion-view>
+
+        <ion-nav-title>
+				<div class="bar bar-header">
+					<h1 class="title">
+						<a href="mailto:info@happywallpaints.com" style="-webkit-tap-highlight-color:grey">
+							<i class="icon ion-email"></i>
+						</a>
+					</h1>
+					
+				</div>
+			</ion-nav-title>
+
+    
+    <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+    </ion-nav-buttons>
+    
+    <ion-nav-buttons side="right">
+        <a href="tel:{{chosenGarage.tel}}" style="font-size:30px;-webkit-tap-highlight-color:grey">
+            <i class="icon ion-android-call amazona-color-black"></i>
+        </a>
+        <button class="button button-clear amazona-logout-button" style="padding-left:25px" ng-click="doLogout()">
+            <i class="icon ion-log-out"></i>
+        </button>
+    </ion-nav-buttons>
+
+	<ion-content class="amazona-home-div has-header" overflow-scroll="false">
+
+
+	<ion-slide-box class="slide-box">
+	  <ion-slide name="amazona-slider-inner">
+			<img class="slide-box__image" src="img/garage/logos/{{logoImg}}" onerror='this.onerror = null; this.src="img/garage/logos/01logo.jpg"'>
+	  </ion-slide>
+	  <ion-slide name="amazona-slider-inner">
+			<img class="slide-box__image" src="img/core/Picture 1.jpg">
+	  </ion-slide>
+	  <ion-slide name="amazona-slider-inner">
+			<img class="slide-box__image" src="img/core/Picture 2.jpg">
+	  </ion-slide>
+	  <ion-slide name="amazona-slider-inner">
+			<img class="slide-box__image" src="img/core/Picture 3.jpg">
+	  </ion-slide>
+	  <ion-slide name="amazona-slider-inner">
+			<img class="slide-box__image" src="img/core/Picture 4.jpg">
+	  </ion-slide>
+	  <ion-slide name="amazona-slider-inner">
+			<img class="slide-box__image" src="img/core/Picture 5.jpg">
+	  </ion-slide>
+	</ion-slide-box>
+
+
+    <div class="home-button-div">
+		<div class="button-bar amazona-home-button-bar">
+			<button class="button amazona-home-button" ng-click="goToSearch()">
+				 <i class="icon icon-center ion-search"></i> 
+				 <span>Search Colors</span>
+			</button>
+		</div>
+		<div class="button-bar amazona-home-button-bar">
+			 <button class="button amazona-home-button" ng-click="goToSettings()">		   
+				<i class="icon icon-center ion-settings"></i> 
+				<span>Settings</span>
+			</button>
+		</div>
+	</div>
+	</ion-content>
+</ion-view>

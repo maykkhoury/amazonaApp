@@ -1,0 +1,81 @@
+<ion-view>
+    <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i></ion-nav-back-button>
+
+        <ion-nav-title>
+            <div class="bar bar-header">
+                <h1 class="title">
+                    Search Colors
+                </h1>
+					
+            </div>
+        </ion-nav-title>
+
+        <ion-nav-buttons side="right">
+            <button class="button button-clear amazona-logout-button" ng-click="doLogout()">
+                <i class="icon ion-log-out"></i>
+            </button>
+        </ion-nav-buttons>
+  <ion-content class="amazona-search has-header" overflow-scroll="false">
+		<div class="row row-center">
+			<div class="col">
+				<form ng-submit="doSearch()" novalidate="">
+				  <div class="list">
+					<!------------------------ -->
+					<label class="item item-input item-stacked-label">
+						<span class="input-label">Cars</span>
+						<div class="select-wrapper">
+							<select tabindex="1" required ng-model="formData.selectedCar" ng-options="x.carName for x in cars">
+								<option value="" hidden selected disabled>Choose Car</option>
+							</select>
+						</div>
+						<div class="error-container" ng-show="formData.selectedCarRequiredError === true">
+						  <div class="error">
+							<i class="ion-information-circled"></i> 
+							*Required
+						  </div>
+						</div>
+						</label>			
+					<label class="item item-input item-stacked-label">
+						<span class="input-label">Color Code</span>
+						<input class="amazona-input" type="text" placeholder="Enter Code (e.g. 002)" ng-model="formData.colorCode">
+					</label>
+					
+					<label class="item item-input item-stacked-label">
+						<span class="input-label">Formula Name</span>
+						<input class="amazona-input" type="text" placeholder="Enter Formula Name (e.g. BIANCO MET)" ng-model="formData.formulaName">
+					</label>
+					
+					<label class="item item-input item-stacked-label">
+						<span class="input-label">Card Number</span>
+						<input class="amazona-input" type="text" placeholder="Enter Card (e.g. Fiat 4* PXR)" ng-model="formData.cardNumber">
+					</label>
+					
+					<label class="item item-input item-stacked-label">
+						<span class="input-label">Year</span>
+						<input class="amazona-input" type="text" placeholder="Enter Year (e.g. 2011)" ng-model="formData.year">
+						<div class="error-container" ng-show="formData.yearNumericError === true">
+						  <div class="error">
+							<i class="ion-information-circled"></i> 
+							*Numeric
+						  </div>
+						</div>
+					</label>
+					<style>
+						.button.button-positive.amazona-clear-button{
+							color: {{chosenGarage.theme_color}};
+						}
+						.button.button-positive.amazona-search-button{
+							background-color: {{chosenGarage.theme_color}};
+						}
+	
+					</style>
+
+					 <button class="button button-block button-positive amazona-clear-button" type="button" ng-click="clearInput()">CLEAR</button>
+					 <button class="button button-block button-positive amazona-search-button" type="submit">SEARCH</button>
+					
+				  </div>
+				</form>
+			</div>
+		</div>
+  </ion-content>
+</ion-view>

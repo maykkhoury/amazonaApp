@@ -1,0 +1,114 @@
+.button.amazona-home-button{
+	background-color: #d0cdcd;
+	color: #676767;
+	height: 130px;
+	font-size:35px;
+}
+.button.amazona-home-button .icon{
+	/*color:#c9a525;*/
+	color: red;
+}
+
+.button.amazona-home-button .icon:before{
+	font-size:50px;
+}
+
+@media (min-width:535px){
+	.home-button-div div {
+		vertical-align: top;
+		text-align: center;
+	}
+	.home-button-div span {
+		display: block;
+		font-size: 30px;
+		padding-left: 60px;
+		padding-right: 60px;
+		white-space: normal;
+		line-height: 20px;
+	}
+}
+.button-bar.amazona-home-button-bar{
+	padding-top: 30px;
+}
+	
+@media (min-width:535px){
+	.button-bar.amazona-home-button-bar{
+		padding-left: 100px;
+		padding-right: 100px;
+		
+	}
+}
+
+
+
+.amazona-home-header .my-big-logo-img{
+	padding-bottom: 4px;
+	padding-top: 4px;
+}
+
+.amazona-home-header div.amazona-phone-div{
+	width:100px;
+}
+
+.amazona-home-header div.amazona-phone-div a.amazona-tel{
+	right:60px;
+}
+
+.amazona-home-header div.amazona-phone-div a.amazona-email{
+	right:104px;
+}
+
+.amazona-home-header div.amazona-phone-div button{
+	position: fixed;
+	right: 4px;
+}
+
+.amazona-home-header .title{
+	padding-right: 60px;
+}
+
+.amazona-email-home{
+	margin-right: 96px;
+	font-size: 30px;
+	text-decoration: initial;
+}
+
+.amazona-tel-home{
+	font-size: 30px;
+	text-decoration: initial;
+}
+
+.amazona-home-div .scroll{
+    height: 60%;
+}
+
+@media(max-width: 767px){
+    .amazona-home-div .scroll{
+        height: 40%;
+    }
+}
+
+.slide-box{
+    height: 100%;
+    text-align: center;
+}
+
+.slider-slide:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: -0.3em;
+}
+
+.slide-box__image{
+    vertical-align: middle;
+    max-height: calc(100% - 88px);
+    max-width: 100%;
+}
+
+@media(max-width: 767px){
+    .slide-box__image{
+        max-height: 100%;
+    }
+}

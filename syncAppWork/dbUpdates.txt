@@ -1,0 +1,501 @@
+{
+  "updates": [
+    {
+      "version": 1,
+      "updateContent": {
+        "garages": [
+          {
+            "actionType": "add",
+            "id_garage": "1",
+            "id_language": "1",
+            "name_responsible": "Miled",
+            "chosen": "0",
+            "garage_name": "Laser Paints",
+            "location": "",
+            "logo": "Laser Paints.jpg",
+            "apply_equation": "1+True",
+            "seqnum": "12",
+            "state": "U",
+            "Version": "",
+            "coat": "LS",
+            "showall": "",
+            "showAlternativeName": "1",
+            "tel": "+9619218656",
+            "key": "101500",
+            "public_tel": "+9619218656",
+            "theme_color": "0",
+            "key1": "",
+            "username": "Laser"
+          },
+          {
+            "actionType": "add",
+            "id_garage": "2",
+            "id_language": "1",
+            "name_responsible": "",
+            "chosen": "0",
+            "garage_name": "S.C.paints",
+            "location": "",
+            "logo": "SC Paints.jpg",
+            "apply_equation": "1+False",
+            "seqnum": "4",
+            "state": "U",
+            "Version": "",
+            "coat": "2K",
+            "showall": "",
+            "showAlternativeName": "0",
+            "tel": "+9619218656",
+            "key": "102625",
+            "public_tel": "+9619218656",
+            "theme_color": "0",
+            "key1": "",
+            "username": "SC"
+          }
+        ],
+        "colors": [
+          {
+            "actionType": "add",
+            "id_color": "1",
+            "colorImgPath": "4101.jpg                                                                                            ",
+            "defaultPrice": "0.00",
+            "id_defaultCurreny": "2",
+            "id_defaultUnit": "1",
+            "colorCode": "4002",
+            "name_color": "BC 4002  Diluant",
+            "masse_volumique": "0.92",
+            "state": "U",
+            "seqnum": "22",
+            "id_unit_on_entry": "3",
+            "name_color_alternative": "",
+            "masse_volumique_ext": "0.92",
+            "argb": "0,255,255,255",
+            "name_color_alternative2": "BC 002  Diluant"
+          },
+          {
+            "actionType": "add",
+            "id_color": "2",
+            "colorImgPath": "4051.jpg                                                                                            ",
+            "defaultPrice": "0.00",
+            "id_defaultCurreny": "2",
+            "id_defaultUnit": "1",
+            "colorCode": "4051",
+            "name_color": "BC 4051  Light Green",
+            "masse_volumique": "0.98",
+            "state": "U",
+            "seqnum": "21",
+            "id_unit_on_entry": "5",
+            "name_color_alternative": "",
+            "masse_volumique_ext": "0.98",
+            "argb": "255,0,60,30",
+            "name_color_alternative2": "BC 051  Light Green"
+          }
+        ],
+        "cars": [
+          {
+            "actionType": "add",
+            "id_car": "1",
+            "carImgPath": "Alfa Romeo.jpg                                                                                      ",
+            "model": "1985",
+            "carName": "Alfa Romeo                                        ",
+            "carYear": "",
+            "seqnum": "1",
+            "state": "U",
+            "colorCodeLocation": "0,1,2,3,4,5,6,13,15,17,18,19,22,23,24,26,",
+            "tableName": "Alfa_Romeo"
+          },
+          {
+            "actionType": "add",
+            "id_car": "2",
+            "carImgPath": "Aston Martin.jpg                                                                                    ",
+            "model": "1985",
+            "carName": "Aston Martin                                      ",
+            "carYear": "",
+            "seqnum": "9",
+            "state": "U",
+            "colorCodeLocation": "3,5,",
+            "tableName": "Aston_Martin"
+          },
+          {
+            "actionType": "add",
+            "id_car": "3",
+            "carImgPath": "bmw.jpg                                                                                             ",
+            "model": "1985",
+            "carName": "BMW                                               ",
+            "carYear": "",
+            "seqnum": "1",
+            "state": "U",
+            "colorCodeLocation": "0,1,2,3,4,5,6,13,15,17,18,19,22,23,24,26,",
+            "tableName": "BMW"
+          }
+        ],
+        "formulas": [
+          {
+            "actionType": "add",
+            "tableName": "Alfa_Romeo",
+            "id_formula": "1",
+            "id_formulaX": "-1",
+            "id_formulaY": "-1",
+            "formulaImgPath": "0                                                                                                   ",
+            "otherPrice": "0.00",
+            "id_otherCurreny": "0",
+            "id_otherUnit": "0",
+            "type": "2K",
+            "id_car": "1",
+            "version": "S1",
+            "name_formula": "BIANCO",
+            "c_year": "1955 - 1965",
+            "variant": "",
+            "duplicate": "0",
+            "colorCode": "001",
+            "colorRGB": "0",
+            "clientName": "",
+            "cardNumber": "",
+            "seqnum": "0",
+            "state": "0",
+            "id_formulaZ": "",
+            "id_formulaZp": "",
+            "id_formulaZ2p": "",
+            "id_formulaXp": "",
+            "id_formulaX2p": "",
+            "id_formulaYp": "",
+            "id_formulaY2p": "",
+            "isEquation15perc4201": "",
+            "converted": "1",
+            "Date_cre_mod": "",
+            "noEquation4201_180": "",
+            "colorRGBPerc": "",
+            "code_formulaX": "",
+            "code_formulaXp": "",
+            "code_formulaXpp": "",
+            "code_formulaY": "",
+            "code_formulaYp": "",
+            "code_formulaYpp": "",
+            "code_formulaZ": "",
+            "code_formulaZp": "",
+            "code_formulaZpp": "",
+            "formulaColor": [
+              {
+                "id_formulaColor": "350849",
+                "id_formula": "1",
+                "id_color": "6911",
+                "quantite": "1.19",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              },
+              {
+                "id_formulaColor": "350850",
+                "id_formula": "1",
+                "id_color": "6900",
+                "quantite": "9.76",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              },
+              {
+                "id_formulaColor": "350851",
+                "id_formula": "1",
+                "id_color": "6903",
+                "quantite": "12.9",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              },
+              {
+                "id_formulaColor": "350852",
+                "id_formula": "1",
+                "id_color": "6905",
+                "quantite": "22.01",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              },
+              {
+                "id_formulaColor": "350853",
+                "id_formula": "1",
+                "id_color": "6894",
+                "quantite": "1079.34",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              }
+            ]
+          },
+          {
+            "actionType": "add",
+            "tableName": "Alfa_Romeo",
+            "id_formula": "3",
+            "id_formulaX": "-1",
+            "id_formulaY": "-1",
+            "formulaImgPath": "0                                                                                                   ",
+            "otherPrice": "0.00",
+            "id_otherCurreny": "0",
+            "id_otherUnit": "0",
+            "type": "2K",
+            "id_car": "1",
+            "version": "S1",
+            "name_formula": "BIANCO PANNA",
+            "c_year": "1987 - 1988",
+            "variant": "",
+            "duplicate": "0",
+            "colorCode": "002",
+            "colorRGB": "0",
+            "clientName": "",
+            "cardNumber": "",
+            "seqnum": "0",
+            "state": "0",
+            "id_formulaZ": "",
+            "id_formulaZp": "",
+            "id_formulaZ2p": "",
+            "id_formulaXp": "",
+            "id_formulaX2p": "",
+            "id_formulaYp": "",
+            "id_formulaY2p": "",
+            "isEquation15perc4201": "",
+            "converted": "1",
+            "Date_cre_mod": "",
+            "noEquation4201_180": "",
+            "colorRGBPerc": "",
+            "code_formulaX": "",
+            "code_formulaXp": "",
+            "code_formulaXpp": "",
+            "code_formulaY": "",
+            "code_formulaYp": "",
+            "code_formulaYpp": "",
+            "code_formulaZ": "",
+            "code_formulaZp": "",
+            "code_formulaZpp": "",
+            "formulaColor": [
+              {
+                "id_formulaColor": "350907",
+                "id_formula": "3",
+                "id_color": "6900",
+                "quantite": "9.42",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              },
+              {
+                "id_formulaColor": "350908",
+                "id_formula": "3",
+                "id_color": "6905",
+                "quantite": "40.09",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              },
+              {
+                "id_formulaColor": "350909",
+                "id_formula": "3",
+                "id_color": "6912",
+                "quantite": "4.01",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              },
+              {
+                "id_formulaColor": "350910",
+                "id_formula": "3",
+                "id_color": "6894",
+                "quantite": "1047.88",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              }
+            ]
+          },
+          {
+            "actionType": "add",
+            "tableName": "Aston_Martin",
+            "id_formula": "330",
+            "id_formulaX": "-1",
+            "id_formulaY": "-1",
+            "formulaImgPath": "0                                                                                                   ",
+            "otherPrice": "0.00",
+            "id_otherCurreny": "0",
+            "id_otherUnit": "0",
+            "type": "2K",
+            "id_car": "2",
+            "version": "S1",
+            "name_formula": "ARRAN WHITE",
+            "c_year": "1999 - 1999",
+            "variant": "",
+            "duplicate": "0",
+            "colorCode": "0053",
+            "colorRGB": "0",
+            "clientName": "",
+            "cardNumber": "",
+            "seqnum": "0",
+            "state": "0",
+            "id_formulaZ": "",
+            "id_formulaZp": "",
+            "id_formulaZ2p": "",
+            "id_formulaXp": "",
+            "id_formulaX2p": "",
+            "id_formulaYp": "",
+            "id_formulaY2p": "",
+            "isEquation15perc4201": "",
+            "converted": "1",
+            "Date_cre_mod": "",
+            "noEquation4201_180": "",
+            "colorRGBPerc": "",
+            "code_formulaX": "",
+            "code_formulaXp": "",
+            "code_formulaXpp": "",
+            "code_formulaY": "",
+            "code_formulaYp": "",
+            "code_formulaYpp": "",
+            "code_formulaZ": "",
+            "code_formulaZp": "",
+            "code_formulaZpp": "",
+            "formulaColor": [
+              {
+                "id_formulaColor": "351157",
+                "id_formula": "330",
+                "id_color": "6896",
+                "quantite": "39.33",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              },
+              {
+                "id_formulaColor": "351158",
+                "id_formula": "330",
+                "id_color": "6898",
+                "quantite": "4.8",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              },
+              {
+                "id_formulaColor": "351159",
+                "id_formula": "330",
+                "id_color": "6894",
+                "quantite": "1057.86",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              }
+            ]
+          },
+          {
+            "actionType": "add",
+            "tableName": "Aston_Martin",
+            "id_formula": "331",
+            "id_formulaX": "-1",
+            "id_formulaY": "-1",
+            "formulaImgPath": "0                                                                                                   ",
+            "otherPrice": "0.00",
+            "id_otherCurreny": "0",
+            "id_otherUnit": "0",
+            "type": "2K",
+            "id_car": "2",
+            "version": "S1",
+            "name_formula": "BOWLAND BLACK",
+            "c_year": "2000 - 2002",
+            "variant": "",
+            "duplicate": "0",
+            "colorCode": "1106 - 9531101",
+            "colorRGB": "0",
+            "clientName": "",
+            "cardNumber": "",
+            "seqnum": "0",
+            "state": "0",
+            "id_formulaZ": "",
+            "id_formulaZp": "",
+            "id_formulaZ2p": "",
+            "id_formulaXp": "",
+            "id_formulaX2p": "",
+            "id_formulaYp": "",
+            "id_formulaY2p": "",
+            "isEquation15perc4201": "",
+            "converted": "1",
+            "Date_cre_mod": "",
+            "noEquation4201_180": "",
+            "colorRGBPerc": "",
+            "code_formulaX": "",
+            "code_formulaXp": "",
+            "code_formulaXpp": "",
+            "code_formulaY": "",
+            "code_formulaYp": "",
+            "code_formulaYpp": "",
+            "code_formulaZ": "",
+            "code_formulaZp": "",
+            "code_formulaZpp": "",
+            "formulaColor": [
+              {
+                "id_formulaColor": "360248",
+                "id_formula": "331",
+                "id_color": "6896",
+                "quantite": "8.62",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              },
+              {
+                "id_formulaColor": "360249",
+                "id_formula": "331",
+                "id_color": "6897",
+                "quantite": "27.4",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              },
+              {
+                "id_formulaColor": "360250",
+                "id_formula": "331",
+                "id_color": "6895",
+                "quantite": "87.95",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              },
+              {
+                "id_formulaColor": "360251",
+                "id_formula": "331",
+                "id_color": "223275",
+                "quantite": "803.23",
+                "id_unit": "2",
+                "state": "I",
+                "encrypted": "0"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "updateContent": {
+        "garages": [
+          {
+            "actionType": "delete",
+            "id_garage": "2",
+            "garage_name": "S.C.paints"
+          }
+        ],
+        "colors": [
+          {
+            "actionType": "delete",
+            "id_color": "2",
+            "colorCode": "4051"
+          }
+        ],
+        "cars": [
+          {
+            "actionType": "delete",
+            "id_car": "2",
+            "tableName": "Aston_Martin"
+          }
+        ],
+        "formulas": [
+          {
+            "actionType": "delete",
+            "id_formula": "331",
+            "colorCode": "1106 - 9531101",
+            "tableName": "Aston_Martin"
+          }
+        ]
+      }
+    }
+  ]
+}

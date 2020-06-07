@@ -1,0 +1,33 @@
+.button.button-positive.amazona-login-button{
+	border-style: solid;
+    border-color: red; 
+	background-color: transparent;
+	color: red;
+	font-size: 16px;
+    font-weight: bold;
+}
+.button.button-positive.amazona-login-button.activated {
+	color: #e64949;
+	border-style: none;
+	background-color: #c5c3c3;
+}
+
+.hideLabel{
+	display: none;
+}
+
+.errorLabel span{
+	color: red;
+	font-size: small;
+}
+
+.amazona-login-div .row, .amazona-login-div .scroll {
+  height: 75%;
+}
+.amazona-login-div .item{
+	border:none;
+} 
+
+div.amazona-phone-div a.amazona-email{
+	right:60px;
+}

@@ -1,0 +1,5 @@
+PRAGMA encoding = "UTF-8";
+.open garagesDB.db
+.mode csv
+.import csv/garage.csv garage
+
