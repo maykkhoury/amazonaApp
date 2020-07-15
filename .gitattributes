@@ -1,2 +1,0 @@
-syncAppWork/amazonaDB.db filter=lfs diff=lfs merge=lfs -text
-www/amazonaDB.db filter=lfs diff=lfs merge=lfs -text

@@ -67,7 +67,7 @@ function selectStuffForTest($cordovaSQLite){
 
 var app = angular.module('amazona', ['ionic', 'ngCordova', 'amazona.controllers', 'amazona.services']);
 
-app.run(function($rootScope, $ionicPlatform, $cordovaSQLite, MySettingsService, getAllCarsService,createTablesService,initiateDataService) {
+app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLite, MySettingsService, getAllCarsService,createTablesService,initiateDataService) {
   $ionicPlatform.ready(function() {
 	console.log("app.run ready");
 	  // Hide splash screen
@@ -77,11 +77,10 @@ app.run(function($rootScope, $ionicPlatform, $cordovaSQLite, MySettingsService, 
     
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
-    if (window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-      cordova.plugins.Keyboard.disableScroll(true);
-
-    }
+	/*if (window.cordova && window.Keyboard) {
+		window.Keyboard.hideKeyboardAccessoryBar(true);
+		window.Keyboard.disableScroll(true);
+    }*/
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
@@ -99,20 +98,60 @@ app.run(function($rootScope, $ionicPlatform, $cordovaSQLite, MySettingsService, 
 	$rootScope.garageChosenDone=false;
 	//debugger;
 	document.addEventListener("deviceready", function () {
-	
-	
+		console.log("devide ready fired");
+		//debugger;
 		if (window.sqlitePlugin !== undefined) {
 		// debugging in the device
-
+			//alert("window.sqlitePlugin !== undefined");
+			console.log("window.sqlitePlugin !== undefined");
 		//db = $cordovaSQLite.openDB({name: 'amazona.db', iosDatabaseLocation: 'default'});
 			//alert("before sqlDB");
+			//http://www.amazonapaints.com/amazonaDB.db
+			console.log(cordova.file);
+			debugger;
+			var storagePath="";
+			if (ionic.Platform.isIOS()) {
+				storagePath = cordova.file.cacheDirectory + "/temp";
+			}else {
+				if(ionic.Platform.isAndroid()){
+					storagePath = cordova.file.cacheDirectory + "/amazonaApp/temp";
+				}
+			}
+
+			var fileTransfer = new FileTransfer();
+			var url="http://www.amazonapaints.com/splash.jpg";
+			var uri = encodeURI(url);
+
+			fileTransfer.download(
+				uri,
+				storagePath,
+				function(entry) {
+					debugger;
+					console.log(entry.filesystem);
+					console.log(entry.fileSystem);
+
+					console.log("download complete: " + entry.toURL());
+				},
+				function(error) {
+					debugger;
+					console.log("download error source " + error.source);
+					console.log("download error target " + error.target);
+					console.log("download error code" + error.code);
+				},
+				false
+			);
+
+
+			
+
 			window.plugins.sqlDB.copy("amazonaDB.db", 0, function() {
+				console.log("window.sqlitePlugin !== undefined: 108");
 				//alert("ok");
 				db = $cordovaSQLite.openDB({name: 'amazonaDB.db', iosDatabaseLocation: 'default'});
 				if(db === undefined){
-					//alert("db is undefined");
+					console.log("db is undefined");
 				}else{
-					//alert("db is not undefined"+db);
+					console.log("db is not undefined"+db);
 				}
 
 				/*MySettingsService.getChosenGarage().then(
@@ -132,9 +171,9 @@ app.run(function($rootScope, $ionicPlatform, $cordovaSQLite, MySettingsService, 
 				);*/
 													
 			}, function(error) {
-				//alert("error");
 				//alert("error:"+error.message);
-				console.error("There was an error copying the database: " + error);
+				console.log("error:"+error.message);
+				console.log("There was an error copying the database: " + error);
 				db = $cordovaSQLite.openDB({name: 'amazonaDB.db', iosDatabaseLocation: 'default'});
 				
 				/*MySettingsService.getChosenGarage().then(
@@ -156,7 +195,8 @@ app.run(function($rootScope, $ionicPlatform, $cordovaSQLite, MySettingsService, 
 			
 		} else {
 		// debugging in the browser	
-		
+			//alert("window.sqlitePlugin === undefined");
+			console.log("window.sqlitePlugin === undefined");
 			/*window.sqlitePlugin.sqlDB.copy("amazonaDB.db", function() {*/
 		
 				db = window.openDatabase("C:\hybridworkspaces\amazonaApp\www\amazonaDB.db", "1.0", "Database", 200000);
@@ -182,7 +222,7 @@ app.run(function($rootScope, $ionicPlatform, $cordovaSQLite, MySettingsService, 
 			});*/
 			
 			//db = window.openDatabase("amazonaDB.db", "1.0", "Database", 200000);
-		}
+		//}
 
 		//debugger;
 		
@@ -257,6 +297,7 @@ app.run(function($rootScope, $ionicPlatform, $cordovaSQLite, MySettingsService, 
 				);
 			}
 		);
+	}
 	});
 	
 	//selectStuffForTest($cordovaSQLite);
