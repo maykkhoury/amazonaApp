@@ -106,7 +106,7 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 			console.log("window.sqlitePlugin !== undefined");
 		//db = $cordovaSQLite.openDB({name: 'amazona.db', iosDatabaseLocation: 'default'});
 			//alert("before sqlDB");
-			//http://www.amazonapaints.com/amazonaDB.db
+			//http://www.amazonapaints.com/amazonaDB-1.db
 			console.log(cordova.file);
 			debugger;
 			var storagePath="";
@@ -144,10 +144,10 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 
 			
 
-			window.plugins.sqlDB.copy("amazonaDB.db", 0, function() {
+			window.plugins.sqlDB.copy("amazonaDB-1.db", 0, function() {
 				console.log("window.sqlitePlugin !== undefined: 108");
 				//alert("ok");
-				db = $cordovaSQLite.openDB({name: 'amazonaDB.db', iosDatabaseLocation: 'default'});
+				db = $cordovaSQLite.openDB({name: 'amazonaDB-1.db', iosDatabaseLocation: 'default'});
 				if(db === undefined){
 					console.log("db is undefined");
 				}else{
@@ -174,7 +174,7 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 				//alert("error:"+error.message);
 				console.log("error:"+error.message);
 				console.log("There was an error copying the database: " + error);
-				db = $cordovaSQLite.openDB({name: 'amazonaDB.db', iosDatabaseLocation: 'default'});
+				db = $cordovaSQLite.openDB({name: 'amazonaDB-1.db', iosDatabaseLocation: 'default'});
 				
 				/*MySettingsService.getChosenGarage().then(
 					function(val){
@@ -197,9 +197,9 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 		// debugging in the browser	
 			//alert("window.sqlitePlugin === undefined");
 			console.log("window.sqlitePlugin === undefined");
-			/*window.sqlitePlugin.sqlDB.copy("amazonaDB.db", function() {*/
+			/*window.sqlitePlugin.sqlDB.copy("amazonaDB-1.db", function() {*/
 		
-				db = window.openDatabase("C:\hybridworkspaces\amazonaApp\www\amazonaDB.db", "1.0", "Database", 200000);
+				db = window.openDatabase("C:\hybridworkspaces\amazonaApp\www\amazonaDB-1.db", "1.0", "Database", 200000);
 				
 				/*MySettingsService.getChosenGarage().then(
 					function(val){
@@ -218,10 +218,10 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 				
 			/*}, function(error) {
 				console.error("There was an error copying the database: " + error);
-				db = window.openDatabase("amazonaDB.db", "1.0", "Database", 200000);
+				db = window.openDatabase("amazonaDB-1.db", "1.0", "Database", 200000);
 			});*/
 			
-			//db = window.openDatabase("amazonaDB.db", "1.0", "Database", 200000);
+			//db = window.openDatabase("amazonaDB-1.db", "1.0", "Database", 200000);
 		//}
 
 		//debugger;
