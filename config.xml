@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="21" id="com.ionicframework.amazonaapp775752" version="2022.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="22" id="com.ionicframework.amazonaapp775752" version="2023.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Amazona Paints</name>
     <description>Automotive refinish formulation with “Amazona Paints” application.
         Whether you are online or offline you can navigate through the application and find what you are looking for. Benefit from Amazona’s latest car paints formulas by downloading “Amazona Paints” app and do not hesitate to contact us for any enquiry.
@@ -53,6 +53,12 @@
         <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png" />
         <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
+        <splash density="ldpi" src="resources/android/splash/drawable-land-ldpi-screen.png" />
+        <splash density="mdpi" src="resources/android/splash/drawable-land-mdpi-screen.png" />
+        <splash density="hdpi" src="resources/android/splash/drawable-land-hdpi-screen.png" />
+        <splash density="xhdpi" src="resources/android/splash/drawable-land-xhdpi-screen.png" />
+        <splash density="xxhdpi" src="resources/android/splash/drawable-land-xxhdpi-screen.png" />
+        <splash density="xxxhdpi" src="resources/android/splash/drawable-land-xxxhdpi-screen.png" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
