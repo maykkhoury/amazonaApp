@@ -97,7 +97,8 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 	$rootScope.unit = "L";
 	$rootScope.garageChosenDone=false;
 	//debugger;
-	document.addEventListener("deviceready", function () {
+	//document.addEventListener("deviceready", function () {
+	ionic.Platform.ready(function () {
 		console.log("devide ready fired");
 		//debugger;
 		if (window.sqlitePlugin !== undefined) {
@@ -106,7 +107,7 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 			console.log("window.sqlitePlugin !== undefined");
 		//db = $cordovaSQLite.openDB({name: 'amazona.db', iosDatabaseLocation: 'default'});
 			//alert("before sqlDB");
-			//http://www.amazonapaints.com/amazonaDB-1.db
+			//http://www.amazonapaints.com/amazonaDB-8.db
 			console.log(cordova.file);
 			debugger;
 			var storagePath="";
@@ -144,14 +145,16 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 
 			
 
-			window.plugins.sqlDB.copy("amazonaDB-1.db", 0, function() {
+			window.plugins.sqlDB.copy("amazonaDB-8.db", 0, function() {
 				console.log("window.sqlitePlugin !== undefined: 108");
-				//alert("ok");
-				db = $cordovaSQLite.openDB({name: 'amazonaDB-1.db', iosDatabaseLocation: 'default'});
+				//alert("window.sqlitePlugin !== undefined");
+				db = $cordovaSQLite.openDB({name: 'amazonaDB-8.db', iosDatabaseLocation: 'default'});
 				if(db === undefined){
 					console.log("db is undefined");
+					//alert("db is undefined");
 				}else{
 					console.log("db is not undefined"+db);
+					//alert("db is not undefined");
 				}
 
 				/*MySettingsService.getChosenGarage().then(
@@ -160,21 +163,22 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 						$rootScope.showAllHues=$rootScope.chosenGarage.showAll ==="1";*/
 						getAllCarsService.getCars().then(
 							function(val){
+								//alert("app.run got cars");
 								console.log("app.run got cars");
 								$rootScope.cars = val;
 							}
 						);
 					/*},
 					function(err){
-						alert("error promise app:" + err.message);
+						//alert("error promise app:" + err.message);
 					}
 				);*/
 													
 			}, function(error) {
-				//alert("error:"+error.message);
+				//alert("in cpy db error: "+error.message);
 				console.log("error:"+error.message);
 				console.log("There was an error copying the database: " + error);
-				db = $cordovaSQLite.openDB({name: 'amazonaDB-1.db', iosDatabaseLocation: 'default'});
+				db = $cordovaSQLite.openDB({name: 'amazonaDB-8.db', iosDatabaseLocation: 'default'});
 				
 				/*MySettingsService.getChosenGarage().then(
 					function(val){
@@ -197,9 +201,9 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 		// debugging in the browser	
 			//alert("window.sqlitePlugin === undefined");
 			console.log("window.sqlitePlugin === undefined");
-			/*window.sqlitePlugin.sqlDB.copy("amazonaDB-1.db", function() {*/
+			/*window.sqlitePlugin.sqlDB.copy("amazonaDB-8.db", function() {*/
 		
-				db = window.openDatabase("C:\hybridworkspaces\amazonaApp\www\amazonaDB-1.db", "1.0", "Database", 200000);
+				db = window.openDatabase("C:\hybridworkspaces\amazonaApp\www\amazonaDB-8.db", "1.0", "Database", 200000);
 				
 				/*MySettingsService.getChosenGarage().then(
 					function(val){
@@ -218,10 +222,10 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 				
 			/*}, function(error) {
 				console.error("There was an error copying the database: " + error);
-				db = window.openDatabase("amazonaDB-1.db", "1.0", "Database", 200000);
+				db = window.openDatabase("amazonaDB-8.db", "1.0", "Database", 200000);
 			});*/
 			
-			//db = window.openDatabase("amazonaDB-1.db", "1.0", "Database", 200000);
+			//db = window.openDatabase("amazonaDB-8.db", "1.0", "Database", 200000);
 		//}
 
 		//debugger;
@@ -254,7 +258,7 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 															function(){
 																initiateDataService.insertGarage().then(
 																	function(){
-																		/*initiateDataService.insertCars().then(
+																		initiateDataService.insertCars().then(
 																			function(){
 																				initiateDataService.insertColors().then(
 																					function(){
@@ -280,7 +284,7 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 																					}
 																				);
 																			}
-																		);*/
+																		);
 																	}
 																);
 															}

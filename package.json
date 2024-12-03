@@ -23,7 +23,7 @@
     "cordova-plugin-file": "6.0.2",
     "cordova-plugin-file-transfer": "^1.7.1",
     "cordova-plugin-network-information": "2.0.2",
-    "cordova-sqlite-storage": "5.0.0"
+    "cordova-sqlite-storage": "6.1.0"
   },
   "cordova": {
     "plugins": {
@@ -41,8 +41,8 @@
       "cordova-plugin-console": {},
       "cordova-plugin-dbcopy": {},
       "cordova-plugin-network-information": {},
-      "cordova-sqlite-storage": {},
-      "cordova-plugin-file-transfer": {}
+      "cordova-plugin-file-transfer": {},
+      "cordova-sqlite-storage": {}
     },
     "platforms": [
       "android"

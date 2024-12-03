@@ -1,6 +1,6 @@
 .button.button-positive.amazona-login-button{
 	border-style: solid;
-    border-color: red; 
+    border-color: red;
 	background-color: transparent;
 	color: red;
 	font-size: 16px;
@@ -26,8 +26,14 @@
 }
 .amazona-login-div .item{
 	border:none;
-} 
+}
 
 div.amazona-phone-div a.amazona-email{
 	right:60px;
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:24px;
 }
