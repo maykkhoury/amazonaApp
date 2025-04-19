@@ -29,23 +29,6 @@ function containsObject(obj, list) {
 
     return false;
 }
-/*
-function containsObjectFormula(obj, list) {
-    var i;
-	console.log("formula list.length="+list.length);
-    for (i = 0; i < list.length; i++) {
-		console.log("formula list[i]=" + list[i].id_formula + " - obj="+obj.id_formula);
-        if (list[i].id_formula === obj.id_formula) {
-			console.log("formula equals");
-            return true;
-        }else{
-			console.log("formula not equals");
-		}
-    }
-
-    return false;
-}
-*/
 
 var db = null;
 function selectStuffForTest($cordovaSQLite){
@@ -76,11 +59,6 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 	}, 1000);
     
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-	/*if (window.cordova && window.Keyboard) {
-		window.Keyboard.hideKeyboardAccessoryBar(true);
-		window.Keyboard.disableScroll(true);
-    }*/
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
@@ -88,26 +66,16 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 	
 	//DB Declaration
 	$rootScope.connected="0";
-	/*try{
-		//debugger;
-		$cordovaSQLite.deleteDB("amazona.db");
-	}catch(error){
-		console.log(error);
-	}*/
+
 	$rootScope.unit = "L";
 	$rootScope.garageChosenDone=false;
-	//debugger;
-	//document.addEventListener("deviceready", function () {
+
 	ionic.Platform.ready(function () {
 		console.log("devide ready fired");
 		//debugger;
 		if (window.sqlitePlugin !== undefined) {
 		// debugging in the device
-			//alert("window.sqlitePlugin !== undefined");
 			console.log("window.sqlitePlugin !== undefined");
-		//db = $cordovaSQLite.openDB({name: 'amazona.db', iosDatabaseLocation: 'default'});
-			//alert("before sqlDB");
-			//http://www.amazonapaints.com/amazonaDB-8.db
 			console.log(cordova.file);
 			debugger;
 			var storagePath="";
@@ -145,10 +113,10 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 
 			
 
-			window.plugins.sqlDB.copy("amazonaDB-8.db", 0, function() {
+			window.plugins.sqlDB.copy("amazonaDB-10.db", 0, function() {
 				console.log("window.sqlitePlugin !== undefined: 108");
 				//alert("window.sqlitePlugin !== undefined");
-				db = $cordovaSQLite.openDB({name: 'amazonaDB-8.db', iosDatabaseLocation: 'default'});
+				db = $cordovaSQLite.openDB({name: 'amazonaDB-10.db', iosDatabaseLocation: 'default'});
 				if(db === undefined){
 					console.log("db is undefined");
 					//alert("db is undefined");
@@ -157,155 +125,116 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
 					//alert("db is not undefined");
 				}
 
-				/*MySettingsService.getChosenGarage().then(
+				getAllCarsService.getCars().then(
 					function(val){
-						$rootScope.chosenGarage = val;
-						$rootScope.showAllHues=$rootScope.chosenGarage.showAll ==="1";*/
-						getAllCarsService.getCars().then(
-							function(val){
-								//alert("app.run got cars");
-								console.log("app.run got cars");
-								$rootScope.cars = val;
-							}
-						);
-					/*},
-					function(err){
-						//alert("error promise app:" + err.message);
+						//alert("app.run got cars");
+						console.log("app.run got cars");
+						$rootScope.cars = val;
 					}
-				);*/
-													
+				);
+									
 			}, function(error) {
 				//alert("in cpy db error: "+error.message);
 				console.log("error:"+error.message);
 				console.log("There was an error copying the database: " + error);
-				db = $cordovaSQLite.openDB({name: 'amazonaDB-8.db', iosDatabaseLocation: 'default'});
+				db = $cordovaSQLite.openDB({name: 'amazonaDB-10.db', iosDatabaseLocation: 'default'});
 				
-				/*MySettingsService.getChosenGarage().then(
+
+				getAllCarsService.getCars().then(
 					function(val){
-						$rootScope.chosenGarage = val;
-						$rootScope.showAllHues=$rootScope.chosenGarage.showAll ==="1";*/
-						getAllCarsService.getCars().then(
-							function(val){
-								$rootScope.cars = val;
-							}
-						);
-				/*	},
-					function(err){
-						alert("error promise app:" + err.message);
+						$rootScope.cars = val;
 					}
-				);*/
-				
+				);
+
 			});
 			
 		} else {
 		// debugging in the browser	
 			//alert("window.sqlitePlugin === undefined");
 			console.log("window.sqlitePlugin === undefined");
-			/*window.sqlitePlugin.sqlDB.copy("amazonaDB-8.db", function() {*/
+			/*window.sqlitePlugin.sqlDB.copy("amazonaDB-10.db", function() {*/
 		
-				db = window.openDatabase("C:\hybridworkspaces\amazonaApp\www\amazonaDB-8.db", "1.0", "Database", 200000);
-				
-				/*MySettingsService.getChosenGarage().then(
-					function(val){
-						$rootScope.chosenGarage = val;
-						$rootScope.showAllHues=$rootScope.chosenGarage.showAll ==="1";*/
-						getAllCarsService.getCars().then(
-							function(val){
-								$rootScope.cars = val;
-							}
-						);
-					/*},
-					function(err){
-						alert("error promise app:" + err.message);
-					}
-				);*/
-				
-			/*}, function(error) {
-				console.error("There was an error copying the database: " + error);
-				db = window.openDatabase("amazonaDB-8.db", "1.0", "Database", 200000);
-			});*/
+				db = window.openDatabase("C:\hybridworkspaces\amazonaApp\www\amazonaDB-10.db", "1.0", "Database", 200000);
 			
-			//db = window.openDatabase("amazonaDB-8.db", "1.0", "Database", 200000);
-		//}
+			getAllCarsService.getCars().then(
+				function(val){
+					$rootScope.cars = val;
+				}
+			);
 
-		//debugger;
-		
-		$cordovaSQLite.execute(db, "DROP table garage");
-		$cordovaSQLite.execute(db, "DROP table car");
-		$cordovaSQLite.execute(db, "DROP table Alfa_Romeo");
-		$cordovaSQLite.execute(db, "DROP table Aston_Martin");
-		$cordovaSQLite.execute(db, "DROP table Alfa_Romeo_formulaColor");
-		$cordovaSQLite.execute(db, "DROP table Aston_Martin_formulaColor");
-		$cordovaSQLite.execute(db, "DROP table color");
+			$cordovaSQLite.execute(db, "DROP table garage");
+			$cordovaSQLite.execute(db, "DROP table car");
+			$cordovaSQLite.execute(db, "DROP table Alfa_Romeo");
+			$cordovaSQLite.execute(db, "DROP table Aston_Martin");
+			$cordovaSQLite.execute(db, "DROP table Alfa_Romeo_formulaColor");
+			$cordovaSQLite.execute(db, "DROP table Aston_Martin_formulaColor");
+			$cordovaSQLite.execute(db, "DROP table color");
 		
 		
-		//create tables 
-		
-		
-		createTablesService.createGarages().then(
-			function(){
-				createTablesService.createCars().then(
-					function(){
-						createTablesService.createFormula("Alfa_Romeo").then(
-							function(){
-								createTablesService.createFormulaColor("Alfa_Romeo_formulaColor").then(
-									function(){
-										createTablesService.createFormula("Aston_Martin").then(
-											function(){
-												createTablesService.createFormulaColor("Aston_Martin_formulaColor").then(
-													function(){
-														createTablesService.createBasicColor().then(
-															function(){
-																initiateDataService.insertGarage().then(
-																	function(){
-																		initiateDataService.insertCars().then(
-																			function(){
-																				initiateDataService.insertColors().then(
-																					function(){
-																						initiateDataService.insertFormulas().then(
-																							function(){
-																								initiateDataService.insertFormulaColors().then(
-																									function(){
-																										MySettingsService.getChosenGarage().then(
-																											function(val){
-																												$rootScope.chosenGarage = val;
-																												$rootScope.showAllHues=$rootScope.chosenGarage.showAll ==="1";
-																												getAllCarsService.getCars().then(
-																													function(val){
-																														$rootScope.cars = val;
-																													}
-																												);
-																											}
-																										);
-																									}
-																								);
-																							}
-																						);
-																					}
-																				);
-																			}
-																		);
-																	}
-																);
-															}
-														);
-													}
-												);
-											}
-										);
-									}
-								);
-							}
-						);
-					}
-				);
-			}
-		);
-	}
+			//create tables 
+			
+			
+			createTablesService.createGarages().then(
+				function(){
+					createTablesService.createCars().then(
+						function(){
+							createTablesService.createFormula("Alfa_Romeo").then(
+								function(){
+									createTablesService.createFormulaColor("Alfa_Romeo_formulaColor").then(
+										function(){
+											createTablesService.createFormula("Aston_Martin").then(
+												function(){
+													createTablesService.createFormulaColor("Aston_Martin_formulaColor").then(
+														function(){
+															createTablesService.createBasicColor().then(
+																function(){
+																	initiateDataService.insertGarage().then(
+																		function(){
+																			initiateDataService.insertCars().then(
+																				function(){
+																					initiateDataService.insertColors().then(
+																						function(){
+																							initiateDataService.insertFormulas().then(
+																								function(){
+																									initiateDataService.insertFormulaColors().then(
+																										function(){
+																											MySettingsService.getChosenGarage().then(
+																												function(val){
+																													$rootScope.chosenGarage = val;
+																													$rootScope.showAllHues=$rootScope.chosenGarage.showAll ==="1";
+																													getAllCarsService.getCars().then(
+																														function(val){
+																															$rootScope.cars = val;
+																														}
+																													);
+																												}
+																											);
+																										}
+																									);
+																								}
+																							);
+																						}
+																					);
+																				}
+																			);
+																		}
+																	);
+																}
+															);
+														}
+													);
+												}
+											);
+										}
+									);
+								}
+							);
+						}
+					);
+				}
+			);
+		}
 	});
-	
-	//selectStuffForTest($cordovaSQLite);
-	//debugger;
 	
   });
 })
@@ -314,19 +243,6 @@ app.run(function($cordovaFileTransfer, $rootScope, $ionicPlatform, $cordovaSQLit
         return parseFloat(Math.round(x * 100) / 100).toFixed(1);
     };
 })
-/*
-.directive('getElementWidthHeight', function($timeout) {
-    return {
-        restrict: 'A',
-        link: function(scope, element) {
-			console.log("*****ingetElementWidthHeight " + element.prop('offsetHeight') + " " + element.prop('offsetWidth'));
-            scope.dirHeight = element.prop('offsetHeight');
-            scope.dirWidth = element.prop('offsetWidth');
-        }
-    };
-})
-
-*/
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 

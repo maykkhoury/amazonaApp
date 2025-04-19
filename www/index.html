@@ -42,13 +42,43 @@
 
 
     <!-- cordova script (this will be a 404 during development) -->
-	<script src="js/ng-cordova.min.js"></script>
+	  <script src="js/ng-cordova.min.js"></script>
     <script src="cordova.js"></script>
+    
+    <!-- Load services module first -->
+    <script src="js/services/services.module.js"></script>
+
+    <!-- Load all services -->
+    <script src="js/services/initiateDataService.js"></script>
+    <script src="js/services/createTablesService.js"></script>
+    <script src="js/services/getAllCarsService.js"></script>
+    <script src="js/services/myLoginService.js"></script>
+    <script src="js/services/mySettingsService.js"></script>
+    <script src="js/services/mySyncService.js"></script>
+    <script src="js/services/searchColorsService.js"></script>
+    <script src="js/services/searchFormulasService.js"></script>
+    <script src="js/services/myHttpService.js"></script>
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/services.js"></script>
+    
+     <!-- Load controllers module first -->
+    <script src="js/controllers/controllers.module.js"></script>
+    
+    <!-- Load all controllers -->
+    <script src="js/controllers/aboutCtrl.js"></script>
+    <script src="js/controllers/colorlistCtrl.js"></script>
+    <script src="js/controllers/colorlocatorresultCtrl.js"></script>
+    <script src="js/controllers/homeCtrl.js"></script>
+    <script src="js/controllers/searchCtrl.js"></script>
+    <script src="js/controllers/synchappCtrl.js"></script>
+    <script src="js/controllers/appCtrl.js"></script>
+    <script src="js/controllers/colorlocatorCtrl.js"></script>
+    <script src="js/controllers/contactusCtrl.js"></script>
+    <script src="js/controllers/detailsCtrl.js"></script>
+    <script src="js/controllers/loginCtrl.js"></script>
+    <script src="js/controllers/settingsCtrl.js"></script>
+
   </head>
   <body ng-app="amazona">
   

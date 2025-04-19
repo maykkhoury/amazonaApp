@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="37" id="com.ionicframework.amazonaapp775752" version="2024.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="38" id="com.ionicframework.amazonaapp775752" version="2025.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Amazona Paints</name>
     <description>Automotive refinish formulation with “Amazona Paints” application.
         Whether you are online or offline you can navigate through the application and find what you are looking for. Benefit from Amazona’s latest car paints formulas by downloading “Amazona Paints” app and do not hesitate to contact us for any enquiry.
@@ -120,6 +120,5 @@
     <plugin name="cordova-plugin-statusbar" spec="2.4.2" />
     <plugin name="cordova-plugin-device" spec="2.0.2" />
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
-    <plugin name="cordova-plugin-ionic-webview" spec="^4.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
 </widget>
